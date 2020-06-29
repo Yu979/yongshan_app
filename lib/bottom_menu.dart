@@ -26,7 +26,7 @@ class BottomMenuPageState extends State<BottomMenuPage>{
         body: viewList[_currentIndex],
         bottomNavigationBar: SafeArea(
           child: BottomNavigationBar(
-            
+
             items: [
               BottomNavigationBarItem(
                 icon: Image.asset("assets/shouye/buttom1.png",height: 28),
