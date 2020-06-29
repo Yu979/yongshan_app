@@ -39,23 +39,11 @@ class _FifthPageState extends State<FifthPage>{
                       Row(
                         children: <Widget>[
                           Container(
-                            width:50,
+                            width:180,
                             height: 50,
-                            child: Image.asset("assets/wode/guanzhu.png",width: 50,height: 50,),
+                            child: Image.asset("assets/wode/sanlan.png",),
                           ),
 
-                          SizedBox(width: 8,),
-                          Container(
-                            width:50,
-                            height: 50,
-                            child: Image.asset("assets/wode/fensi.png",width: 50,height: 60,),
-                          ),
-                          SizedBox(width: 8,),
-                          Container(
-                            width:50,
-                            height: 50,
-                            child: Image.asset("assets/wode/huozan.png",width: 50,height:63,),
-                          ),
                         ],
                       )
                    ]

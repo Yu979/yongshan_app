@@ -81,6 +81,7 @@ flutter:
     - assets/wode/touxiang.png
     - assets/wode/neirong.png
     - assets/wode/chenggong.png
+    - assets/wode/sanlan.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
