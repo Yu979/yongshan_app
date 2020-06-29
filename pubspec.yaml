@@ -25,6 +25,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_screenutil: ^0.4.2
   font_awesome_flutter: ^8.2.0
+  flutter_swiper : ^1.1.6
+
 
 dev_dependencies:
   flutter_test:
@@ -49,6 +51,25 @@ flutter:
 
   assets:
     - assets/denglu/logo.png
+    - assets/shouye/aixin.png
+    - assets/shouye/baixiangguo.png
+    - assets/shouye/buttom1.png
+    - assets/shouye/buttom2.png
+    - assets/shouye/buttom3.png
+    - assets/shouye/buttom4.png
+    - assets/shouye/buttom5.png
+    - assets/shouye/lingdai.png
+    - assets/shouye/lvsexinxi.png
+    - assets/shouye/shanyao.png
+    - assets/shouye/shuben.png
+    - assets/shouye/tang.png
+    - assets/shouye/tuijian1.png
+    - assets/shouye/tuijian2.png
+    - assets/shouye/tuijian3.png
+    - assets/shouye/yaowu.png
+    - assets/shouye/yisheng.png
+    - assets/shouye/miaoshu1.png
+    - assets/shouye/miaoshu2.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

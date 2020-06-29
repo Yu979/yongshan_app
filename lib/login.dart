@@ -78,12 +78,12 @@ class _LoginPageState extends State<LoginPage> {
    */
   String validateUserName(value){
     // 正则匹配手机号
-    RegExp exp = RegExp(r'^((13[0-9])|(14[0-9])|(15[0-9])|(16[0-9])|(17[0-9])|(18[0-9])|(19[0-9]))\d{8}$');
-    if (value.isEmpty) {
-      return '用户名不能为空!';
-    }else if (!exp.hasMatch(value)) {
-      return '请输入正确手机号';
-    }
+//    RegExp exp = RegExp(r'^((13[0-9])|(14[0-9])|(15[0-9])|(16[0-9])|(17[0-9])|(18[0-9])|(19[0-9]))\d{8}$');
+//    if (value.isEmpty) {
+//      return '用户名不能为空!';
+//    }else if (!exp.hasMatch(value)) {
+//      return '请输入正确手机号';
+//    }
     return null;
   }
 
@@ -91,11 +91,11 @@ class _LoginPageState extends State<LoginPage> {
    * 验证密码
    */
   String validatePassWord(value){
-    if (value.isEmpty) {
-      return '密码不能为空';
-    }else if(value.trim().length<6 || value.trim().length>18){
-      return '密码长度不正确';
-    }
+//    if (value.isEmpty) {
+//      return '密码不能为空';
+//    }else if(value.trim().length<6 || value.trim().length>18){
+//      return '密码长度不正确';
+//    }
     return null;
   }
 
@@ -235,7 +235,7 @@ class _LoginPageState extends State<LoginPage> {
             //只有输入通过验证，才会执行这里
             _formKey.currentState.save();
             //todo 登录操作
-            Navigator.popAndPushNamed(context, "/login");
+            Navigator.popAndPushNamed(context, "/bottomMenu");
             print("$_username + $_password");
           }
 
