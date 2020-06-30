@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:yongshanapp/login.dart';
 import 'package:yongshanapp/first_page.dart';
 import 'package:yongshanapp/bottom_menu.dart';
+import 'package:yongshanapp/shipu.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         "/login":(_) =>LoginPage(),
         "/first":(_) =>FirstPage(),
         "/bottomMenu":(_) =>BottomMenuPage(),
+        "/shipu":(_)=>SecondPage(),
       },
       debugShowCheckedModeBanner: false,
     );
