@@ -97,6 +97,20 @@ flutter:
     - assets/shipu/binghou.png
     - assets/shipu/yajiankang.png
     - assets/shipu/yufang.png
+    - assets/zhuanye/chang.png
+    - assets/zhuanye/chuanran.png
+    - assets/zhuanye/er.png
+    - assets/zhuanye/gu.png
+    - assets/zhuanye/huxi.png
+    - assets/zhuanye/more.png
+    - assets/zhuanye/neifenmi.png
+    - assets/zhuanye/top.png
+    - assets/zhuanye/yisheng.png
+    - assets/zhuanye/zhongliu.png
+    - assets/zhuanye/zhongyi.png
+    - assets/zhuanye/huoyue.png
+    - assets/zhuanye/zhongyixinxi.png
+    - assets/zhuanye/keshiyisheng.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

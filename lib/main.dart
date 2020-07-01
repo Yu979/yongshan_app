@@ -3,6 +3,8 @@ import 'package:yongshanapp/login.dart';
 import 'package:yongshanapp/first_page.dart';
 import 'package:yongshanapp/bottom_menu.dart';
 import 'package:yongshanapp/shipu.dart';
+import 'package:yongshanapp/zhongyike.dart';
+import 'package:yongshanapp/zixun.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,6 +26,8 @@ class MyApp extends StatelessWidget {
         "/first":(_) =>FirstPage(),
         "/bottomMenu":(_) =>BottomMenuPage(),
         "/shipu":(_)=>SecondPage(),
+        "/zhongyi":(_)=>ZhongyiPage(),
+        "/zixun" :(_)=>ZixunPage(),
       },
       debugShowCheckedModeBanner: false,
     );
