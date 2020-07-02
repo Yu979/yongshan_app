@@ -113,6 +113,15 @@ flutter:
     - assets/zhuanye/zhongyixinxi.png
     - assets/zhuanye/keshiyisheng.png
     - assets/zhuanye/liaotian.png
+    - assets/shipu/caishi/breakfast.png
+    - assets/shipu/caishi/lunch.png
+    - assets/shipu/caishi/dinner.png
+    - assets/shipu/caishi/dessert.png
+    - assets/shipu/caishi/fruit.png
+    - assets/shipu/caishi/vegetable.png
+    - assets/shipu/caishi/gaijiaofan.png
+    - assets/shipu/caishi/soup.png
+    - assets/shipu/caishi/chaomimian.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
