@@ -122,6 +122,15 @@ flutter:
     - assets/shipu/caishi/gaijiaofan.png
     - assets/shipu/caishi/soup.png
     - assets/shipu/caishi/chaomimian.png
+    - assets/shipu/bingzhong/binglimingcheng.png
+    - assets/shipu/bingzhong/hanxiekewei.png
+    - assets/shipu/bingzhong/yinshishangwei.png
+    - assets/shipu/bingzhong/ganqifanwei.png
+    - assets/shipu/bingzhong/shirezhongzu.png
+    - assets/shipu/bingzhong/yuxuetingwei.png
+    - assets/shipu/bingzhong/weiyinkuihao.png
+    - assets/shipu/bingzhong/piweixuhan.png
+    - assets/shipu/bingzhong/lowpart.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

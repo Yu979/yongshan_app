@@ -35,9 +35,6 @@ class _ShipuPageState extends State<SecondPage>{
                   indicatorSize:TabBarIndicatorSize.label,
                   indicatorWeight:0.1,
                   indicator: BoxDecoration(
-
-
-
                   ),
                 )
             ),
@@ -58,24 +55,47 @@ class _ShipuPageState extends State<SecondPage>{
 
 class Bingli extends StatelessWidget{
   //todo
-  Widget imageArea = new Column(
-        children:<Widget>[
-          Container(child:Image.asset('assets/shipu/yufang.png',width: 400.0,fit:BoxFit.fill)),
-          SizedBox(height:10.0,),
-          Container(child:Image.asset('assets/shipu/bingzhong.png',width: 400.0,fit:BoxFit.fill)),
-          SizedBox(height:10.0,),
-          Container(child:Image.asset('assets/shipu/binghou.png',width: 400.0,fit:BoxFit.fill)),
-          SizedBox(height:10.0,),
-          Container(child:Image.asset('assets/shipu/yajiankang.png',width: 400.0,fit:BoxFit.fill))
-        ]
-    );
+
+  //IconButton(
+  //              color: Colors.black,
+  //              // 第三方库icon图标
+  //              icon: Image.asset( 'assets/shouye/lingdai.png'),
+  //              iconSize: 40.0,
+  //              onPressed: (){
+  //              },
+  //            ),
+  //             Text('专家')
+  //            ]
 
   @override
   Widget build(BuildContext context){
     return Scaffold(
       body:ListView(
         children: <Widget>[
-          imageArea,
+          new Column(children:<Widget>[
+        OutlineButton(
+          child:Image.asset('assets/shipu/yufang.png',width: 400.0,fit:BoxFit.fill),
+          onPressed: (){},
+          ),
+        SizedBox(height:10.0,),
+        OutlineButton(
+          child:Image.asset('assets/shipu/bingzhong.png',width: 400.0,fit:BoxFit.fill),
+          onPressed: (){
+             Navigator.push(context,MaterialPageRoute(builder: (context) {
+              return Shipu_bingzhong();
+          }));}),
+         SizedBox(height:10.0,),
+         OutlineButton(
+           child:Image.asset('assets/shipu/binghou.png',width: 400.0,fit:BoxFit.fill),
+           onPressed: (){},
+         ),
+         SizedBox(height:10.0,),
+         OutlineButton(
+            child:Image.asset('assets/shipu/yajiankang.png',width: 400.0,fit:BoxFit.fill),
+            onPressed: (){},
+         )
+          ]
+          )
         ],
       ),
     );
@@ -196,6 +216,86 @@ class Caiyao extends StatelessWidget{
               ),
             ],
           )
+        ],
+      ),
+    );
+  }
+}
+
+class Shipu_bingzhong extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    TextEditingController textEditingController =new TextEditingController();
+    // TODO: implement build
+    return Scaffold(
+      body: ListView(
+        children: <Widget>[
+           new Column(
+             children: <Widget>[
+               Container(child: Image.asset('assets/shipu/bingzhong.png',width: 400.0,fit:BoxFit.fill),),
+               SizedBox(height: 10.0,),
+               TextField(
+                 controller: textEditingController,
+                 autofocus: false,
+                 decoration: InputDecoration(
+                   contentPadding: EdgeInsets.all(12.0),
+                   hintText: "胃病",
+                   border:
+                   OutlineInputBorder(borderRadius: BorderRadius.circular(15.0)),
+                 ),
+               ),
+               Text('胃病症',textScaleFactor: 1.5,),
+               SizedBox(height: 10.0,),
+               Container(child: Image.asset('assets/shipu/bingzhong/binglimingcheng.png',width: 400.0,fit:BoxFit.fill),),
+               SizedBox(height: 10.0,),
+
+               new Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                 verticalDirection: VerticalDirection.down,
+                 children: <Widget>[
+                   Column(
+                     crossAxisAlignment: CrossAxisAlignment.start,
+                     children: <Widget>[
+                     Container(child: Image.asset('assets/shipu/bingzhong/hanxiekewei.png'),height: 35.0,),
+                     SizedBox(height: 10.0,),
+                     Container(child: Image.asset('assets/shipu/bingzhong/yuxuetingwei.png'),height: 35.0,)],
+                   ),
+                   Column(
+                     crossAxisAlignment: CrossAxisAlignment.start,
+                     children: <Widget>[
+                     Container(child: Image.asset('assets/shipu/bingzhong/yinshishangwei.png'),height: 35.0,),
+                     SizedBox(height:10.0,),
+                     Container(child: Image.asset('assets/shipu/bingzhong/weiyinkuihao.png'),height: 35.0,)
+                   ],),
+                   Column(
+                     crossAxisAlignment: CrossAxisAlignment.start,
+                     children: <Widget>[
+                     Container(child: Image.asset('assets/shipu/bingzhong/ganqifanwei.png'),height: 35.0,),
+                     SizedBox(height: 10.0,),
+                     Container(child: Image.asset('assets/shipu/bingzhong/piweixuhan.png'),height: 35.0,)
+                   ],),
+                   Column(
+                     crossAxisAlignment: CrossAxisAlignment.start,
+                     children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/shirezhongzu.png'),height: 35.0,),
+                     Container(child: SizedBox(height: 45.0,),)],
+                   )
+                 ],
+               ),
+               SizedBox(height: 10.0,),
+
+//               new Row(
+//                 mainAxisAlignment: MainAxisAlignment.start,
+//                 children: <Widget>[
+//                   Column(children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/yuxuetingwei.png'),height: 35.0,)],),
+//                   Column(children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/weiyinkuihao.png'),height: 35.0,)],),
+//                   Column(children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/piweixuhan.png'),height: 35.0,)],)
+//                 ],
+//               ),
+//               SizedBox(height: 10.0,),
+               
+               Container(child:Image.asset('assets/shipu/bingzhong/lowpart.png'),width: 400.0,),
+             ],
+           )
         ],
       ),
     );
