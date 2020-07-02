@@ -12,6 +12,7 @@ class _ZixunPageState extends State<ZixunPage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(235, 235, 235, 1),
       appBar: AppBar(
         primary: true,
         backgroundColor: Colors.white,
@@ -23,6 +24,13 @@ class _ZixunPageState extends State<ZixunPage>{
           },
         ),
         title: Text('智能助手1',style: TextStyle(fontSize: 20,color: Colors.orange),),
+      ),
+
+      body: ListView(
+        children: <Widget>[
+
+          Image.asset('assets/zhuanye/liaotian.png'),
+        ],
       ),
     );
   }

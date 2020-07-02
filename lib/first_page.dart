@@ -213,15 +213,83 @@ class Guanzhu extends StatelessWidget{
 }
 
 class Remen extends StatelessWidget{
+  TextEditingController textEditingController = TextEditingController();
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context,){
     return Scaffold(
+         appBar: AppBar(
+           backgroundColor: Colors.white,
+           automaticallyImplyLeading: false,
+           title: TextField(
+             onTap: (){
+               Navigator.pushNamed(context, "/sousuo");
+             },
+             controller: textEditingController,
+             autofocus: false,
+             decoration: InputDecoration(
+               contentPadding: EdgeInsets.all(12.0),
+               hintText: "搜索...",
+               border:
+               OutlineInputBorder(borderRadius: BorderRadius.circular(15.0)),
+
+             ),
+           ),
+
+
+         ),
       body: ListView(
         children:<Widget>[
-          Container(
-              width: MediaQuery.of(context).size.width,
-              height: 200.0,
-              child: Text('s')),
+
+          SizedBox(height: 10,),
+          new Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Column(
+                  children: <Widget>[
+                    IconButton(
+                      color: Colors.black,
+                      // 第三方库icon图标
+                      icon: Image.asset( 'assets/shouye/lingdai.png'),
+                      iconSize: 40.0,
+                      onPressed: (){
+                      },
+                    ),
+                    Text('专家')
+                  ]
+              ),
+
+              Column(
+                  children: <Widget>[
+                    IconButton(
+
+                      color: Colors.black,
+                      icon: Image.asset( 'assets/shouye/lvsexinxi.png'),
+                      iconSize: 40.0,
+
+                      onPressed: (){
+
+                      },
+                    ),
+                    Text('用户')
+                  ]
+              ),
+              Column(
+                  children: <Widget>[
+                    IconButton(
+                      color: Colors.black,
+                      icon: Image.asset( 'assets/shouye/shuben.png',),
+                      iconSize: 40.0,
+
+                      onPressed: (){
+
+                      },
+                    ),
+                    Text('知识')
+                  ]
+              ),
+            ],
+          ),
+          Image.asset('assets/shouye/shanzhu.png'),
         ],
       ),
     );
