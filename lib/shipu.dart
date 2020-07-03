@@ -152,7 +152,7 @@ class Caiyao extends StatelessWidget{
                   children: <Widget>[
                     Container(
                       child: Image.asset( 'assets/shipu/caishi/dessert.png'),
-                      height: 100.0,
+                      height: 90.0,
                     ),
                     Text('面包甜点')
                   ]
@@ -162,7 +162,7 @@ class Caiyao extends StatelessWidget{
                   children: <Widget>[
                     Container(
                       child: Image.asset( 'assets/shipu/caishi/fruit.png'),
-                      height: 100.0,
+                      height: 90.0,
                     ),
                     Text('水果蔬菜')
                   ]
@@ -172,7 +172,7 @@ class Caiyao extends StatelessWidget{
                   children: <Widget>[
                     Container(
                       child: Image.asset( 'assets/shipu/caishi/vegetable.png'),
-                      height: 100.0,
+                      height: 90.0,
                     ),
                     Text('素   食')
                   ]
@@ -189,7 +189,7 @@ class Caiyao extends StatelessWidget{
                   children: <Widget>[
                     Container(
                       child: Image.asset( 'assets/shipu/caishi/gaijiaofan.png'),
-                      height: 100.0,
+                      height: 90.0,
                     ),
                     Text('米饭主食')
                   ]
@@ -199,7 +199,7 @@ class Caiyao extends StatelessWidget{
                   children: <Widget>[
                     Container(
                       child: Image.asset( 'assets/shipu/caishi/soup.png'),
-                      height: 100.0,
+                      height: 90.0,
                     ),
                     Text('汤   类')
                   ]
@@ -209,7 +209,7 @@ class Caiyao extends StatelessWidget{
                   children: <Widget>[
                     Container(
                       child: Image.asset( 'assets/shipu/caishi/chaomimian.png'),
-                      height: 100.0,
+                      height: 90.0,
                     ),
                     Text('面食小炒')
                   ]
@@ -228,6 +228,18 @@ class Shipu_bingzhong extends StatelessWidget{
     TextEditingController textEditingController =new TextEditingController();
     // TODO: implement build
     return Scaffold(
+      appBar: AppBar(
+        title:Text("病中"),
+        leading: Builder(builder: (context){
+          return IconButton(
+            icon: Icon(Icons.keyboard_return,color: Colors.black,),
+            onPressed: (){
+              Navigator.of(context).pop();
+            },
+          );
+        },),
+        backgroundColor: Colors.amber,
+      ),
       body: ListView(
         children: <Widget>[
            new Column(
@@ -256,27 +268,27 @@ class Shipu_bingzhong extends StatelessWidget{
                    Column(
                      crossAxisAlignment: CrossAxisAlignment.start,
                      children: <Widget>[
-                     Container(child: Image.asset('assets/shipu/bingzhong/hanxiekewei.png'),height: 35.0,),
+                     Container(child: Image.asset('assets/shipu/bingzhong/hanxiekewei.png'),height: 30.0,),
                      SizedBox(height: 10.0,),
-                     Container(child: Image.asset('assets/shipu/bingzhong/yuxuetingwei.png'),height: 35.0,)],
+                     Container(child: Image.asset('assets/shipu/bingzhong/yuxuetingwei.png'),height: 30.0,)],
                    ),
                    Column(
                      crossAxisAlignment: CrossAxisAlignment.start,
                      children: <Widget>[
-                     Container(child: Image.asset('assets/shipu/bingzhong/yinshishangwei.png'),height: 35.0,),
+                     Container(child: Image.asset('assets/shipu/bingzhong/yinshishangwei.png'),height: 30.0,),
                      SizedBox(height:10.0,),
-                     Container(child: Image.asset('assets/shipu/bingzhong/weiyinkuihao.png'),height: 35.0,)
+                     Container(child: Image.asset('assets/shipu/bingzhong/weiyinkuihao.png'),height: 30.0,)
                    ],),
                    Column(
                      crossAxisAlignment: CrossAxisAlignment.start,
                      children: <Widget>[
-                     Container(child: Image.asset('assets/shipu/bingzhong/ganqifanwei.png'),height: 35.0,),
+                     Container(child: Image.asset('assets/shipu/bingzhong/ganqifanwei.png'),height: 30.0,),
                      SizedBox(height: 10.0,),
-                     Container(child: Image.asset('assets/shipu/bingzhong/piweixuhan.png'),height: 35.0,)
+                     Container(child: Image.asset('assets/shipu/bingzhong/piweixuhan.png'),height: 30.0,)
                    ],),
                    Column(
                      crossAxisAlignment: CrossAxisAlignment.start,
-                     children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/shirezhongzu.png'),height: 35.0,),
+                     children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/shirezhongzu.png'),height: 30.0,),
                      Container(child: SizedBox(height: 45.0,),)],
                    )
                  ],
@@ -286,9 +298,9 @@ class Shipu_bingzhong extends StatelessWidget{
 //               new Row(
 //                 mainAxisAlignment: MainAxisAlignment.start,
 //                 children: <Widget>[
-//                   Column(children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/yuxuetingwei.png'),height: 35.0,)],),
-//                   Column(children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/weiyinkuihao.png'),height: 35.0,)],),
-//                   Column(children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/piweixuhan.png'),height: 35.0,)],)
+//                   Column(children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/yuxuetingwei.png'),height: 30.0,)],),
+//                   Column(children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/weiyinkuihao.png'),height: 30.0,)],),
+//                   Column(children: <Widget>[Container(child: Image.asset('assets/shipu/bingzhong/piweixuhan.png'),height: 30.0,)],)
 //                 ],
 //               ),
 //               SizedBox(height: 10.0,),
